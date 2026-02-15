@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vansh's Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<div id="successPopup" class="popup">
+    <div class="popup-content">
+        <div class="checkmark">✔</div>
+        <h2>Message Sent Successfully!</h2>
+        <p>Thank you for contacting with Me. 🚀</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<body>
+<nav>
+    <h2>🚀 Vansh's Portfolio</h2>
+    <ul>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Hello, I'm <span>Vansh Jingar</span></h1>
+    <h3 class="typing"></h3>
+</section>
+<section id="about" class="card section">
+    <h2>👨‍💻 About Me</h2>
+    <p>
+        I am a dedicated Web Developer who enjoys crafting clean, responsive, 
+        and user-friendly web experiences using HTML, CSS, and JavaScript.
+        
+    </p>
+</section>
+
+<section id="skills" class="card section">
+    <h2>⚡ Skills</h2>
+    <div class="skill">
+        <p>Java</p>
+        <div class="bar"><div class="progress html"></div></div>
+    </div>
+    <div class="skill">
+        <p>C++</p>
+        <div class="bar"><div class="progress css"></div></div>
+    </div>
+    <div class="skill">
+        <p>C</p>
+        <div class="bar"><div class="progress js"></div></div>
+    </div>
+</section>
+
+<section id="projects" class="card section">
+    <h2>📂 My Projects</h2>
+
+    <div class="project">
+        <h3>🚺 Women Safety App</h3>
+        <p>
+            Designed and developed a women’s safety Android app. <br>
+            Using Java featuring real-time location sharing, emergency alerts,
+            and a one-tap SOS button.
+        </p>
+        <span class="tech">Tech Used: Java, Android Studio, Firebase</span>
+    </div>
+
+    <div class="project">
+        <h3>🖼️ Responsive Image Gallery</h3>
+        <p>
+            A responsive image gallery built with a modern and clean design.<br>
+            It displays multiple images in an organized and interactive layout.<br>
+            The gallery provides smooth navigation and works seamlessly across all devices.
+        </p>
+        <span class="tech">Tech Used: HTML, CSS, JavaScript</span>
+    </div>
+
+    <div class="project">
+        <h3>🌐 Personal Portfolio Website</h3>
+        <p>
+            Modern responsive portfolio showcasing skills and projects
+            with smooth animations and interactive UI.
+        </p>
+        <span class="tech">Tech Used: HTML, CSS, JavaScript</span>
+    </div>
+
+</section>
+
+<section id="contact" class="card section">
+    <h2>📲 Contact Me</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="tel" id="mobile" placeholder="Mobile Number" 
+               pattern="[0-9]{10}" 
+               title="Enter 10 digit mobile number" required>
+
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <textarea id="message" rows="4" 
+                  placeholder="Write Your Query..." required></textarea>
+
+        <button type="submit">Send Message 🚀</button>
+    </form>
+</section>
+<script src="Portfolio.js"></script>
+</body>
+</html>

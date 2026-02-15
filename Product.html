@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ElectroStore</title>
+<link rel="stylesheet" href="Product.css">
+</head>
+
+<body>
+
+<h1>⚡ ElectroStore</h1>
+
+<div class="top">
+
+<input id="search" placeholder="Search electronics...">
+
+<select id="filter">
+<option value="all">All</option>
+<option value="phone">Phones</option>
+<option value="laptop">Laptops</option>
+<option value="audio">Audio</option>
+</select>
+
+<select id="sort">
+<option value="default">Sort</option>
+<option value="low">Price Low</option>
+<option value="high">Price High</option>
+</select>
+
+<button onclick="toggleCart()">Cart</button>
+<button onclick="toggleWish()">Wishlist</button>
+
+</div>
+
+<div id="products" class="products"></div>
+
+<div id="note" class="notification"></div>
+
+<div id="cart" class="panel"></div>
+<div id="wish" class="panel"></div>
+
+<script src="Product.js"></script>
+
+</body>
+</html>
